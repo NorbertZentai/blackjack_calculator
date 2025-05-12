@@ -1,0 +1,18 @@
+{
+  "APP": {
+    "TITLE": "Blackjack Assistant",
+    "DESCRIPTION": "The Blackjack Assistant is a simple tool that helps blackjack players track cards and calculate probabilities.",
+    "START": "Start",
+    "RESET": "Reset",
+    "HIT": "Hit",
+    "STAND": "Stand",
+    "DOUBLE": "Double Down",
+    "SPLIT": "Split",
+    "SURRENDER": "Surrender"
+  },
+  "NAV": {
+    "HOME": "Home",
+    "RULES": "Rules",
+    "ABOUT": "About"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "APP": {
+    "TITLE": "Blackjack Segéd",
+    "DESCRIPTION": "A Blackjack Segéd egy egyszerű eszköz, amely segít a blackjack játékosoknak nyomon követni a kártyákat és kiszámítani a valószínűségeket.",
+    "START": "Kezdés",
+    "RESET": "Újraindítás",
+    "HIT": "Kérj lapot",
+    "STAND": "Megállás",
+    "DOUBLE": "Megduplázás",
+    "SPLIT": "Felosztás",
+    "SURRENDER": "Feladás"
+  },
+  "NAV": {
+    "HOME": "Kezdőlap",
+    "RULES": "Szabályok",
+    "ABOUT": "Rólunk"
+  }
+}
