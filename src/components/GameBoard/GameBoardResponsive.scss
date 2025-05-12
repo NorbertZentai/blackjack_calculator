@@ -1,0 +1,69 @@
+/* Tablet (közepes kijelzők) */
+@media (max-width: 1200px) {
+  .table-container img {
+    max-width: 90vw;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .title {
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+  }
+
+  .game-board {
+    padding: 1rem 0;
+
+    img {
+      width: 80%;
+    }
+  }
+}
+
+/* Mobil */
+@media (max-width: 1000px) {
+  .table-container img {
+    max-width: 85vw;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .title {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .game-board {
+    padding: 0.5rem 0;
+
+    img {
+      width: 55%;
+      margin-top: 1rem;
+    }
+  }
+}
+
+/* Kis mobil (pl. iPhone SE) */
+@media (max-width: 700px) {
+  .table-container img {
+    max-width: 90vw;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    padding: 0 0.5rem;
+  }
+
+  .game-board {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+    img {
+      width: 65%;
+      margin-top: 0.5rem;
+    }
+  }
+}

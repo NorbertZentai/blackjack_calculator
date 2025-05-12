@@ -1,0 +1,18 @@
+@use '@styles/variables' as *;
+
+.orientation-overlay {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $color-bg-page;
+  color: $color-text-primary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 2rem;
+}
