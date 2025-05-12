@@ -1,14 +1,14 @@
 import React from "react";
-import GameBoard from "./components/GameBoard/GameBoard";
 import OrientationNotice from "./components/Orientation/OrientationNotice";
 import Navbar from "./components/navbar/Navbar";
+import AppRoutes from './routes/AppRoutes';
 
 const App: React.FC = () => {
   return (
     <>
       <Navbar />
+      <AppRoutes />
       <OrientationNotice />
-      <GameBoard />
     </>
   );
 };

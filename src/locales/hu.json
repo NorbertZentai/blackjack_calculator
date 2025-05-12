@@ -13,6 +13,23 @@
   "NAV": {
     "HOME": "Kezdőlap",
     "RULES": "Szabályok",
-    "ABOUT": "Rólunk"
+    "ABOUT": "Rólunk",
+    "LOGIN": "Bejelentkezés",
+    "REGISTER": "Regisztráció",
+    "PROFILE": "Profil",
+    "GAME": "Játék"
+  },
+  "PROFILE": {
+    "TITLE": "Profilom",
+    "USERNAME": "Felhasználónév",
+    "EMAIL": "Email",
+    "JOINED": "Csatlakozás dátuma"
+  },
+  "RULES": {
+    "TITLE": "Blackjack szabályok",
+    "DESCRIPTION": "Tanuld meg a Blackjack alapvető szabályait, hogy magabiztosan játszhass.",
+    "RULE_1": "Próbálj meg minél közelebb kerülni a 21-hez anélkül, hogy túllépnéd.",
+    "RULE_2": "Győzd le az osztó kezét anélkül, hogy túllépnéd a 21-et.",
+    "RULE_3": "A figurás lapok értéke 10, míg az ász értéke 1 vagy 11 lehet."
   }
 }

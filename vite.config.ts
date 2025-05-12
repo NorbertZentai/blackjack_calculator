@@ -11,6 +11,7 @@ export default defineConfig({
       '@assets': path.resolve(__dirname, './src/assets'),
       '@styles': path.resolve(__dirname, './src/styles'),
       '@locales': path.resolve(__dirname, './src/locales'),
+      '@InterpolatedText': path.resolve(__dirname, './src/InterpolatedText'),
     },
   },
   server: {

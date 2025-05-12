@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import InterpolatedText from '../InterpolatedText';
+import { Link } from 'react-router-dom';
+import InterpolatedText from '@/InterpolatedText';
 import './Navbar.scss';
 import './NavbarResponsive.scss';
 
@@ -12,34 +13,71 @@ const Navbar: React.FC = () => {
     i18n.changeLanguage(lng);
   };
 
+  const closeMenu = () => setMenuOpen(false);
+
   return (
     <nav className="navbar">
       <div className="navbar__logo">
-        <InterpolatedText template="{{ APP.TITLE }}" />
+        <Link to="/" onClick={closeMenu}>
+          <InterpolatedText template="{{ APP.TITLE }}" />
+        </Link>
       </div>
 
       <div className={`navbar__links ${menuOpen ? 'open' : ''}`}>
         <ul>
-          <li onClick={() => setMenuOpen(false)}>
-            <InterpolatedText template="{{ NAV.HOME }}" />
+          {/* Főoldal és Játék */}
+          <li onClick={closeMenu}>
+            <Link to="/">
+              <InterpolatedText template="{{ NAV.HOME }}" />
+            </Link>
           </li>
-          <li onClick={() => setMenuOpen(false)}>
-            <InterpolatedText template="{{ NAV.RULES }}" />
+          <li onClick={closeMenu}>
+            <Link to="/game">
+              <InterpolatedText template="{{ NAV.GAME }}" />
+            </Link>
           </li>
-          <li onClick={() => setMenuOpen(false)}>
-            <InterpolatedText template="{{ NAV.ABOUT }}" />
+          <li onClick={closeMenu}>
+            <Link to="/rules">
+              <InterpolatedText template="{{ NAV.RULES }}" />
+            </Link>
+          </li>
+
+          {/* Felhasználói oldalak */}
+          <li onClick={closeMenu}>
+            <Link to="/login">
+              <InterpolatedText template="{{ NAV.LOGIN }}" />
+            </Link>
+          </li>
+          <li onClick={closeMenu}>
+            <Link to="/register">
+              <InterpolatedText template="{{ NAV.REGISTER }}" />
+            </Link>
+          </li>
+          <li onClick={closeMenu}>
+            <Link to="/profile">
+              <InterpolatedText template="{{ NAV.PROFILE }}" />
+            </Link>
+          </li>
+
+          {/* Általános oldalak */}
+          <li onClick={closeMenu}>
+            <Link to="/about">
+              <InterpolatedText template="{{ NAV.ABOUT }}" />
+            </Link>
           </li>
         </ul>
+
         <div className="navbar__lang">
           <button onClick={() => changeLanguage('hu')}>HU</button>
           <button onClick={() => changeLanguage('en')}>EN</button>
         </div>
       </div>
 
+      {/* Hamburger ikon mobil nézethez */}
       <div className="navbar__toggle" onClick={() => setMenuOpen(!menuOpen)}>
-        <div className="bar"></div>
-        <div className="bar"></div>
-        <div className="bar"></div>
+        <div className="bar" />
+        <div className="bar" />
+        <div className="bar" />
       </div>
     </nav>
   );

@@ -2,7 +2,7 @@ import React from "react";
 import tableImage from "../../assets/images/BJ_table.png";
 import "./GameBoard.scss";
 import "./GameBoardResponsive.scss";
-import InterpolatedText from "../InterpolatedText";
+import InterpolatedText from "../../InterpolatedText";
 
 const GameBoard: React.FC = () => {
   return (
